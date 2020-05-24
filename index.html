@@ -1,7 +1,23 @@
 <html>
 <head>
+  <title>Complex Canvas</title>
   <script src="script.js" defer></script>
 </head>
 <body>
-<canvas width=1000 height=1000 style="width:1000px; height:1000px;"></canvas>
+  <canvas width=1000 height=1000 style="width:1000px; height:1000px;"></canvas>
+  <div style="float:right; align-content:center; text-align:center; width:30%;">
+    <p>Enter JS statement that will return a truthy value</p><br>
+    <input style="width:100%;" value="Math.sin(z.modulus()) < 0.5"><br><br>
+    <button onclick="updateCanvas()">Go!</button>
+    <button onclick="clearCanvas()">Clear Canvas</button><br><br>
+    <h1>How to use complex numbers</h1>
+    <ul style="align-content: stretch; text-align:left;">
+      <li>Use 'z' to reference the variable number</li>
+      <li>z.modulus() - Returns distance of number from origin</li>
+      <li>z.argument() - Returns angle (-π – π) between number and positive x axis</li>
+      <li>z.conjugate() - Returns complex conjugate of number</li>
+      <li>num(Re, Im) - Returns a complex number with real part Re and imaginary part Im</li>
+      <li>cAdd(z, w) - Returns the result of adding numbers z and w</li>
+      <li>cMult(z,w) - Returns the result of multiplying numbers z and w</li>
+  </div>
 </body>
